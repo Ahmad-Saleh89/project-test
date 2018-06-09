@@ -3,6 +3,8 @@ body{
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* ------- Page Navigation ------- */
 .navWrap{
   position: relative;
   display: block;
@@ -16,6 +18,8 @@ body{
   max-width: 980px;
   height: 108px;
 }
+
+/* ------- Small Navigation - Top --------- */
 .navTopWrap{
   position: relative;
   display: block;
@@ -61,9 +65,10 @@ body{
 .navTop{
   position: relative;
   float: right;
+  height: 30px;
   vertical-align: middle;
   background-color: #82001c;
-  padding-right: 130px;
+  padding-right: 114px;
   margin-right: -130px;
 }
 .navTop::after{
@@ -83,4 +88,109 @@ body{
   padding: 9px 16px;
   font-weight: 600;
   vertical-align: middle;
+}
+
+/*  -----  Primary Navigation - Bottom ------- */
+.navBottomWrap{
+  display: block;
+  position: relative;
+  height: 78px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.siteLogo{
+  float: left;
+  background-color: #82001c;
+  font-size: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px 34px;
+  border-radius: 3px;
+  margin-top: 14px;
+}
+.primaryNavWrap{
+  display: inline-block;
+  width: 690px;
+  height: 78px;
+}
+.primaryNavWrap > .navBottomTable{
+  width: 508px;
+  height: 78px;
+  margin: 0 auto;
+}
+.primaryNavWrap .navBottomLink{
+  display: inline-block;
+  height: 78px;
+  vertical-align: middle;
+}
+.primaryNavWrap .navLinkTitle{
+  padding: 0 10px;
+  height: 78px;
+  padding: 30px 80px 20px 20px;
+  box-sizing: border-box;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #82001c;
+  cursor: pointer;
+}
+.navBottomWrap .navSpanWide{
+  position: relative;
+  font-size: 18px;
+  font-weight: 800;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 1px;
+}
+.primaryNavWrap .navLinkTitle > span::after{
+  content: '';
+  position: absolute;
+  border: solid transparent;
+  margin-left: 8px;
+  margin-top: 2px;
+  border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+  border-top: 14px solid #82001c;
+  margin-bottom: -14px;
+}
+
+.callUs{
+  float: right;
+  margin-top: 30px;
+  text-align: right;
+}
+.callUs > a{
+  text-decoration: none;
+  color: #82001c;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+/* ------ SubHeader ------- */
+.subHeaderWrap{
+  width: 100%;
+  background-color: #ffdd00;
+  border-top: 1px solid #ccc;
+  height: 30px;
+  margin-top: 5px;
+}
+.subHeader{
+  width: 980px;
+  margin: 6px auto;
+  list-style: none;
+  padding-left: 0;
+}
+.subHeader > li{
+  display: inline-block;
+}
+.subHeader > li > a {
+  text-decoration: none;
+  color: #464646;
+  font-size: 12px;
+  font-weight: 500;
+}
+.subHeader > li span{
+  padding: 0 6px;
 }

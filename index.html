@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Imagemakers</title>
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -27,44 +28,46 @@
         <div class="navBottomWrap">
           <a href="#" class="siteLogo">LOGO</a>
 
-          <div class="navBottomTable">
-            <div class="navBottomLink">
-              <div class="navLinkTitle" tabindex="0">
-                  FIND BY <br> <span>BRAND</span>
+          <div class="primaryNavWrap">
+            <div class="navBottomTable">
+              <div class="navBottomLink">
+                <div class="navLinkTitle" tabindex="0">
+                    FIND BY <br> <span class="navSpanWide">BRAND</span>
+                </div>
+                <ul class="navLinkMenu" style="display: none">
+                  <li>Some links or content to be added later</li>
+                  <li>Some links or content to be added later</li>
+                  <li>Some links or content to be added later</li>
+                </ul>
               </div>
-              <ul class="navLinkMenu" style="display: none">
-                <li>Some links or content to be added later</li>
-                <li>Some links or content to be added later</li>
-                <li>Some links or content to be added later</li>
-              </ul>
-            </div>
-
-            <div class="navBottomLink">
-              <div class="navLinkTitle" tabindex="1">
-                  FIND BY <br> <span>PART TYPE</span>
+    
+              <div class="navBottomLink">
+                <div class="navLinkTitle" tabindex="1">
+                    FIND BY <br> <span class="navSpanWide">PART TYPE</span>
+                </div>
+                <ul class="navLinkMenu" style="display: none">
+                  <li>Some links or content to be added later</li>
+                  <li>Some links or content to be added later</li>
+                  <li>Some links or content to be added later</li>
+                </ul>
               </div>
-              <ul class="navLinkMenu" style="display: none">
-                <li>Some links or content to be added later</li>
-                <li>Some links or content to be added later</li>
-                <li>Some links or content to be added later</li>
-              </ul>
-            </div>
-
-            <div class="navBottomLink">
-              <div class="navLinkTitle" tabindex="2">
-                  <span>SEARCH</span>
+  
+              <div class="navBottomLink">
+                <div class="navLinkTitle" tabindex="2">
+                    <br> <span class="navSpanWide">SEARCH</span>
+                </div>
+                <ul class="navLinkMenu" style="display: none">
+                  <li>Some links or content to be added later</li>
+                  <li>Some links or content to be added later</li>
+                  <li>Some links or content to be added later</li>
+                </ul>
               </div>
-              <ul class="navLinkMenu" style="display: none">
-                <li>Some links or content to be added later</li>
-                <li>Some links or content to be added later</li>
-                <li>Some links or content to be added later</li>
-              </ul>
-            </div>
+            </div> <!-- navBottomTable -->
 
-          </div> <!-- navBottomTable -->
+          </div> <!-- primaryNavWrap -->
 
           <div class="callUs">
-            <a href="tel:8005551212">GIVE US A CALL <br> <span>(800) 555-1212</span></a>
+            <a href="tel:8005551212">GIVE US A CALL <br> <span class="navSpanWide">(800) 555-1212</span></a>
           </div>
 
         </div> <!-- navBottomWrap -->
@@ -72,6 +75,24 @@
     </div> <!-- navWrap -->
   </header>
 
+
+  <!-- hierarchical Pages Tree -->
+  <div class="subHeaderWrap">
+      <ul class="subHeader">
+        <li id="homePage">
+          <a href="#">HOME</a> <span> / </span>
+        </li>
+        <li id="parentCatigory">
+          <a href="#">PARENT CATEGORY</a> <span> / </span>
+        </li>
+        <li id="childCatigory">
+          <a href="#">CHILD CATEGORY</a> <span> / </span>
+        </li>
+        <li id="filteredCatigory">
+          <a href="#">SPARE PARTS</a>
+        </li>
+      </ul>
+  </div>
   
 </body>
 </html>
