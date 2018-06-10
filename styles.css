@@ -194,3 +194,73 @@ body{
 .subHeader > li span{
   padding: 0 6px;
 }
+
+/* ----  Current Page Content */
+main{
+  width: 100%;
+}
+#contentContainer{
+  width: 980px;
+  margin: 0 auto;
+}
+#contentHeading{
+  margin: 0 auto 20px;
+  padding-top: 55px;
+  font-size: 48px;
+  font-weight: 600;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 2px;
+  color: #464646;
+}
+
+/* ------ Sidebar Elements --------- */
+.sidebar{
+  position: relative;
+  display: inline-block;
+  width: 160px;
+  color: #464646;
+}
+.sidebar > h2{
+  margin: 0 auto 28px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.sidebar .optionList{
+  padding-left: 0;
+  margin-top: 5px;
+  list-style: none;
+}
+.sidebar .optionList > .optionItem{
+  position: relative;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-top: .5px solid #b6b6b6;
+  transition: all 500ms ease-in-out;
+}
+.sidebar > .optionWrapper a{
+  text-decoration: none;
+  color: #464646;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-weight: 400;
+}
+.optionList .hoverArrow{
+  position: absolute;
+  background-image: url(images/Vector.png);
+  background-repeat: no-repeat;
+  width: 12px;
+  height: 15px;
+  margin-top: 3px;
+  right: 10px;
+  opacity: 0;
+  transition: all 200ms ease-in-out;
+
+}
+.optionItem:hover .hoverArrow{
+  opacity: 1;
+  right: 0;
+}
+.optionList .activeItem a{
+  font-weight: 600;
+}
