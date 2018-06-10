@@ -446,6 +446,7 @@ main{
   box-sizing: border-box;
   text-align: center;
   cursor: pointer;
+  overflow: hidden;
 }
 .productImg{
   position: relative;
@@ -513,7 +514,8 @@ main{
   color: #82001c;
   border: 2px solid #82001c;
   background-color: rgba(233, 232, 232, 0.9);
-  left: 25px;
+  left: 50%;
+  margin-left: -58px;
   bottom: 20px;
   opacity: 0;
   -webkit-transition: all 300ms ease-in-out;
@@ -523,4 +525,67 @@ main{
 .gridBox:hover .hoverButton{
   bottom: 30px;
   opacity: 1;
+}
+
+/* \\\\ Sidebar & Products Grid - Responsive Design //// */
+@media only screen and (max-width: 576px){
+  #contentContainer{
+    width: 100%;
+  }
+  #contentHeading , .sidebar{
+    display: none;
+  }
+  .productsWrap{
+    float: none;
+  }
+  .productsWrap .productsGrid{
+    width: 100%;
+    min-width: 310px;
+    max-width: 460px;
+    margin: 20px auto;
+    border: 0;
+  }
+  .gridBox {
+    width: 50%;
+    height: 200px;
+    margin: auto;
+    border: 0;
+    text-align: left;
+  }
+  .gridBox .productImg{
+    width: 100%;
+  }
+  .gridBox > .productImg > .hoverButton{
+    padding: 5px 30px;
+    font-size: 16px;
+    margin-left: -46px;
+  }
+  .gridBox:nth-child(1) .productImg{
+    background-image: url(mobile_imgs/watch.png);
+  }
+  .gridBox:nth-child(2) .productImg{
+    background-image: url(mobile_imgs/sneakers.png);
+  }
+  .gridBox:nth-child(3) .productImg{
+    background-image: url(mobile_imgs/shampoo.png);
+  }
+  .gridBox:nth-child(4) .productImg{
+    background-image: url(mobile_imgs/intel-reader.png);
+    width: 160px;
+  }
+  .gridBox:nth-child(5) .productImg{
+    background-image: url(mobile_imgs/screw.png);
+  }
+  .gridBox:nth-child(6) .productImg{
+    background-image: url(mobile_imgs/kitchen.png);
+  }
+  .gridBox:nth-child(7) .productImg{
+    background-image: url(mobile_imgs/necklace.png);
+  }
+  .gridBox:nth-child(8) .productImg{
+    background-image: url(mobile_imgs/baby-stroller.png);
+  }
+  .gridBox:nth-last-child(-n+4){
+    display: none;
+  }
 }
