@@ -4,6 +4,7 @@ body{
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* ********  Header  ********* */
 /* ------- Page Navigation ------- */
 .navWrap{
   position: relative;
@@ -37,6 +38,7 @@ body{
   height: 100%;
   padding: 9px 60px 9px 130px;
   margin-left: -130px;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 #leftOffer > span{
@@ -115,17 +117,17 @@ body{
   width: 690px;
   height: 78px;
 }
-.primaryNavWrap > .navBottomTable{
+.navBottomTable{
   width: 508px;
   height: 78px;
   margin: 0 auto;
 }
-.primaryNavWrap .navBottomLink{
+.navBottomLink{
   display: inline-block;
   height: 78px;
   vertical-align: middle;
 }
-.primaryNavWrap .navLinkTitle{
+.navLinkTitle{
   padding: 0 10px;
   height: 78px;
   padding: 30px 80px 20px 20px;
@@ -168,6 +170,140 @@ body{
   line-height: 16px;
 }
 
+/* ---  Navigation Button Toggler ----- */
+.navbar-toggler {
+  display: none;
+  position: relative;
+  border: none;
+  padding: 0;
+  width: 30px;
+  height: 25px;
+  margin: 20px;
+  float: left;
+  background-color: #82001c;
+  cursor: pointer;
+}
+/* horizontal lines inside nav button: */
+.navbar-toggler span {
+  display: block;
+  position: relative;
+  border-radius: 4px;
+  width: 30px;
+  height: 2px;
+  background-color: #ff8fa7;
+  margin: 5px 0;
+  padding: 0;
+}
+
+
+/* \\\\ Header Responsive Design //// */
+@media only screen and (max-width: 576px){
+  .navbar-toggler {
+    display: block;
+  }
+  .navigation{
+    height: 140px;
+  }
+  .navTopWrap{
+    display: none;
+    position: absolute;
+    width: 100%;
+    background-color: #f8879f;
+    top: 70px;
+    z-index: 10;
+  }
+  #leftOffer{
+    display: none;
+    height: 50px;
+    position: absolute;
+    float: none;
+  }
+  .navTop{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    background-color: #b20127;
+    padding: 5px 0;
+    border: 1px solid #ff8fa7;
+  }
+  .navTop > .navTopLink{
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 10px;
+    color: #ffffff;
+  }
+  .navTop > .navTopLink:hover{
+    background-color: #82001c;
+  }
+  .navTop::after{
+    display: none;
+  }
+  .navBottomWrap{
+    width: 100%;
+    height: 140px;
+    background-color: #82001c;
+  }
+  .logoWrap{
+    height: 70px;
+    margin: 0 auto;
+    width: 120px;
+    text-align: center;
+  }
+  .siteLogo{
+    background-color: #fff;
+    color: #82001c;
+    font-size: 24px;
+    float: none;
+    margin-top: 15px;
+    padding: 5px 20px;
+    display: inline-block;
+  }
+  .primaryNavWrap{
+    display: block;
+    height: 70px;
+    background-color: #b20127;
+    width: 100%;
+    border-top: 1px solid #f8879f;
+  }
+  .navBottomTable{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    height: 70px;
+    margin: 0 auto;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  .navBottomLink{
+    height: 70px;
+  }
+  .navBottomLink:nth-child(1){
+    float: left;
+  }
+  .navBottomLink:nth-child(3){
+    float: right;
+  }
+  .primaryNavWrap .navLinkTitle{
+    padding: 18px 30px 18px 0px;
+    text-align: start;
+    color: #ffffff;
+    font-size: 10px;
+    height: 70px;
+  }
+  .navBottomWrap .navSpanWide{
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .primaryNavWrap .navLinkTitle > span::after{
+    border-top: 14px solid #ffffff;
+  }
+  .callUs{
+    display: none;
+  }
+}
+
+
 /* ------ SubHeader ------- */
 .subHeaderWrap{
   width: 100%;
@@ -194,6 +330,23 @@ body{
 .subHeader > li span{
   padding: 0 6px;
 }
+
+/* \\\\ Sub Header Responsive Design //// */
+@media only screen and (max-width: 576px){
+  .subHeaderWrap{
+    margin-top: 0;
+    height: auto;
+    padding-bottom: 3px;
+  }
+  .subHeader{
+    width: 100%;
+    padding: 0 15px;
+  }
+  .subHeader > li > a {
+    font-size: 11px;
+  }
+}
+
 
 /* ----  Current Page Sidebar & Products */
 main{
