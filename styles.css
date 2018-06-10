@@ -195,12 +195,14 @@ body{
   padding: 0 6px;
 }
 
-/* ----  Current Page Content */
+/* ----  Current Page Sidebar & Products */
 main{
   width: 100%;
 }
 #contentContainer{
+  display: block;
   width: 980px;
+  height: 750px;
   margin: 0 auto;
 }
 #contentHeading{
@@ -216,9 +218,9 @@ main{
 /* ------ Sidebar Elements --------- */
 .sidebar{
   position: relative;
-  display: inline-block;
   width: 160px;
   color: #464646;
+  display: inline-block;
 }
 .sidebar > h2{
   margin: 0 auto 28px;
@@ -237,6 +239,7 @@ main{
   padding-bottom: 5px;
   border-top: .5px solid #b6b6b6;
   transition: all 500ms ease-in-out;
+  cursor: pointer;
 }
 .sidebar > .optionWrapper a{
   text-decoration: none;
@@ -247,7 +250,7 @@ main{
 }
 .optionList .hoverArrow{
   position: absolute;
-  background-image: url(images/Vector.png);
+  background-image: url(images/vector.png);
   background-repeat: no-repeat;
   width: 12px;
   height: 15px;
@@ -263,4 +266,108 @@ main{
 }
 .optionList .activeItem a{
   font-weight: 600;
+}
+.optionList .activeItem > span{
+  opacity: 1;
+  right: 0;
+}
+
+/* --- Products Grid --- */
+.productsWrap{
+  display: block;
+  float: right;
+
+}
+.productsGrid{
+  display: table;
+  width: 780px;
+  border: 1px solid #dcdbdb;
+}
+.gridBox{
+  position: relative;
+  display: table-cell;
+  width: 195px;
+  height: 190px;
+  border: 1px solid #dcdbdb;
+  float: left;
+  box-sizing: border-box;
+  text-align: center;
+  cursor: pointer;
+}
+.productImg{
+  position: relative;
+  width: 170px;
+  height: 150px;
+  margin: 0 auto;
+  background-position: bottom center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.gridBox:nth-child(1) .productImg{
+  background-image: url(images/hand-watch.png);
+}
+.gridBox:nth-child(2) .productImg{
+  background-image: url(images/sneakers.png);
+}
+.gridBox:nth-child(3) .productImg{
+  background-image: url(images/shampoo.png);
+}
+.gridBox:nth-child(4) .productImg{
+  background-image: url(images/intel-reader.png);
+  width: 160px;
+}
+.gridBox:nth-child(5) .productImg{
+  background-image: url(images/screw.png);
+}
+.gridBox:nth-child(6) .productImg{
+  background-image: url(images/kitchen.png);
+}
+.gridBox:nth-child(7) .productImg{
+  background-image: url(images/necklace.png);
+}
+.gridBox:nth-child(8) .productImg{
+  background-image: url(images/baby-stroller.png);
+}
+.gridBox:nth-child(9) .productImg{
+  background-image: url(images/pig-toy.png);
+}
+.gridBox:nth-child(10) .productImg{
+  background-image: url(images/iphones.png);
+}
+.gridBox:nth-child(11) .productImg{
+  background-image: url(images/headphone.png);
+}
+.gridBox:nth-child(12) .productImg{
+  background-image: url(images/tea-pot.png);
+}
+
+.gridBox p{
+  position: absolute;
+  bottom: 0;
+  padding-right: 20px;
+  padding-left: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #464646;
+  line-height: 18px;
+}
+.gridBox > .productImg > .hoverButton{
+  position: absolute;
+  padding: 8px 40px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #82001c;
+  border: 2px solid #82001c;
+  background-color: rgba(233, 232, 232, 0.9);
+  left: 25px;
+  bottom: 20px;
+  opacity: 0;
+  -webkit-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+.gridBox:hover .hoverButton{
+  bottom: 30px;
+  opacity: 1;
 }
