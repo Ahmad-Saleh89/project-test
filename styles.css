@@ -98,6 +98,7 @@ body{
   position: relative;
   height: 78px;
   width: 100%;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -130,6 +131,7 @@ body{
 .navLinkTitle{
   height: 78px;
   padding: 30px 80px 20px 20px;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-size: 12px;
   font-weight: 500;
@@ -268,6 +270,7 @@ body{
     height: 70px;
     margin: 0 auto;
     text-align: center;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
   }
   .navBottomLink{
@@ -480,12 +483,15 @@ main{
   padding-top: 5px;
   padding-bottom: 5px;
   border-top: .5px solid #b6b6b6;
+  -webkit-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
   transition: all 500ms ease-in-out;
   cursor: pointer;
 }
 .sidebar > .optionWrapper a{
   text-decoration: none;
   color: #464646;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-size: 14px;
   font-weight: 400;
@@ -499,8 +505,9 @@ main{
   margin-top: 3px;
   right: 10px;
   opacity: 0;
+  -webkit-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
-
 }
 .optionItem:hover .hoverArrow{
   opacity: 1;
@@ -518,7 +525,6 @@ main{
 .productsWrap{
   display: block;
   float: right;
-
 }
 .productsGrid{
   display: table;
@@ -532,6 +538,7 @@ main{
   height: 190px;
   border: 1px solid #dcdbdb;
   float: left;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   text-align: center;
   cursor: pointer;
@@ -735,6 +742,7 @@ main{
     width: 100%;
     padding-right: 10px;
     border: 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
   }
   .gridBox{
