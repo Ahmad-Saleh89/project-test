@@ -378,7 +378,7 @@ body{
   }
   .primaryNavWrap{
     left: 50%;
-    width: 460px;
+    width: 450px;
   }
   .navBottomTable{
     width: 440px;
@@ -421,7 +421,7 @@ body{
 }
 
 /* \\\\ Sub Header Responsive Design //// */
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 991px){
   .subHeaderWrap{
     margin-top: 0;
     height: auto;
@@ -429,7 +429,7 @@ body{
   }
   .subHeader{
     width: 100%;
-    padding: 0 15px;
+    padding: 0 10px;
   }
   .subHeader > li > a {
     font-size: 11px;
@@ -706,5 +706,39 @@ main{
   }
   .gridBox .productImg{
     width: 100%;
+  }
+}
+
+
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+  #contentContainer{
+    width: 100%;
+    height: 900px;
+    margin: 0 auto;
+  }
+  #contentHeading{
+    margin: 0 auto 20px;
+    padding-top: 20px;
+    padding-left: 10px;
+  }
+  
+  /* ------ Sidebar Elements --------- */
+  .sidebar{
+    width: 140px;
+    padding-left: 10px;
+  }
+  /* --- Products Grid --- */
+  .productsWrap{
+    width: 70%;
+  }
+  .productsGrid{
+    width: 100%;
+    padding-right: 10px;
+    border: 0;
+    box-sizing: border-box;
+  }
+  .gridBox{
+    width: 33.33%;
+    border: 0;
   }
 }
