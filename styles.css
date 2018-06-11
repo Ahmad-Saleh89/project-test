@@ -6,6 +6,7 @@ body{
 
 /* ********  Header  ********* */
 /* ------- Page Navigation ------- */
+/* Navigation Wrapper */
 .navWrap{
   position: relative;
   display: block;
@@ -28,6 +29,7 @@ body{
   width:100%;
   background-color: #82001c;
 }
+/* Free Shipping Offer */
 #leftOffer{
   position: relative;
   float: left;
@@ -45,6 +47,7 @@ body{
   color: #ff8fa7;
   font-weight: 400;
 }
+/* Skewed left ending - Desktop */
 #leftOffer::before{
   content: '';
   position: absolute;
@@ -54,6 +57,7 @@ body{
   left: -30px;
   top:0;
 }
+/* Skewed right ending - Desktop*/
 #leftOffer::after{
   content: '';
   position: absolute;
@@ -63,7 +67,7 @@ body{
   right: -30px;
   top:0;
 }
-
+/* Top Right Secondary navigation */
 .navTop{
   position: relative;
   float: right;
@@ -73,6 +77,7 @@ body{
   padding-right: 114px;
   margin-right: -130px;
 }
+/* Skewed Right Ending - Desktop */
 .navTop::after{
   content: '';
   position: absolute;
@@ -82,6 +87,7 @@ body{
   right: -30px;
   top:0;
 }
+/* Top right secondary navigation links */
 .navTop > .navTopLink{
   display: inline-block;
   text-decoration: none;
@@ -146,6 +152,7 @@ body{
   font-family: 'Oswald', sans-serif;
   letter-spacing: 1px;
 }
+/* Small Down Arrow next to Primary links */
 .primaryNavWrap .navLinkTitle > span::after{
   content: '';
   position: absolute;
@@ -157,7 +164,7 @@ body{
   border-top: 14px solid #82001c;
   margin-bottom: -14px;
 }
-
+/* Call to Action - Phone Number */
 .callUs{
   float: right;
   margin-top: 30px;
@@ -171,7 +178,7 @@ body{
   line-height: 16px;
 }
 
-/* ---  Navigation Button Toggler ----- */
+/* ---  Navigation Button Toggler - Hamburger ----- */
 .navbar-toggler {
   display: none;
   position: relative;
@@ -196,8 +203,8 @@ body{
   padding: 0;
 }
 
-
 /* \\\\ Header Responsive Design //// */
+/* Small & Medium Screens */
 @media only screen and (max-width: 768px){
   .navbar-toggler {
     display: block;
@@ -301,6 +308,7 @@ body{
   }
 }
 
+/* Medium Screens Only */
 @media only screen and (min-width: 577px) and (max-width: 768px) {
   .navigation{
     height: 180px;
@@ -339,6 +347,7 @@ body{
   }
 }
 
+/* Larger Screens */
 @media only screen and (min-width: 769px) and (max-width: 991px) {
   .navWrap{
     position: relative;
@@ -354,7 +363,6 @@ body{
     height: 108px;
   }
   
-  /* ------- Small Navigation - Top --------- */
   #leftOffer{
     font-size: 10px;
     padding: 9px 50px 9px 10px;
@@ -395,7 +403,7 @@ body{
 }
 
 
-/* ------ SubHeader ------- */
+/* ------ ***   SubHeader  **** ------- */
 .subHeaderWrap{
   width: 100%;
   background-color: #ffdd00;
@@ -439,8 +447,9 @@ body{
   }
 }
 
-
-/* ----  Current Page Sidebar & Products */
+/*\ ********************************************* \*/
+/*  ***** Current Page - Sidebar & Products ***** */
+/*\ ********************************************* \*/
 main{
   width: 100%;
 }
@@ -450,6 +459,7 @@ main{
   height: 750px;
   margin: 0 auto;
 }
+/* Products: Filtered Category Title - h1 */
 #contentHeading{
   margin: 0 auto 20px;
   padding-top: 55px;
@@ -496,6 +506,7 @@ main{
   font-size: 14px;
   font-weight: 400;
 }
+/* Hover Effect - Arrow to the right */
 .optionList .hoverArrow{
   position: absolute;
   background-image: url(images/vector.png);
@@ -553,6 +564,7 @@ main{
   background-size: contain;
   background-repeat: no-repeat;
 }
+/* Products Images */
 .gridBox:nth-child(1) .productImg{
   background-image: url(images/hand-watch.png);
 }
@@ -591,6 +603,7 @@ main{
   background-image: url(images/tea-pot.png);
 }
 
+/* Product Caption */
 .gridBox p{
   position: absolute;
   bottom: 0;
@@ -601,6 +614,7 @@ main{
   color: #464646;
   line-height: 18px;
 }
+/* Product VIEW button when hover */
 .gridBox > .productImg > .hoverButton{
   position: absolute;
   padding: 8px 40px;
@@ -657,6 +671,7 @@ main{
     font-size: 16px;
     margin-left: -46px;
   }
+  /* Images for Mobiles */
   .gridBox:nth-child(1) .productImg{
     background-image: url(mobile_imgs/watch.png);
   }
