@@ -128,7 +128,6 @@ body{
   vertical-align: middle;
 }
 .navLinkTitle{
-  padding: 0 10px;
   height: 78px;
   padding: 30px 80px 20px 20px;
   box-sizing: border-box;
@@ -197,7 +196,7 @@ body{
 
 
 /* \\\\ Header Responsive Design //// */
-@media only screen and (max-width: 576px){
+@media only screen and (max-width: 768px){
   .navbar-toggler {
     display: block;
   }
@@ -208,15 +207,11 @@ body{
     display: none;
     position: absolute;
     width: 100%;
-    background-color: #f8879f;
     top: 70px;
     z-index: 10;
   }
   #leftOffer{
     display: none;
-    height: 50px;
-    position: absolute;
-    float: none;
   }
   .navTop{
     position: absolute;
@@ -303,6 +298,99 @@ body{
   }
 }
 
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .navigation{
+    height: 180px;
+  }
+  .navbar-toggler {
+    margin: 30px;
+  }
+  .navTopWrap{
+    top: 90px;
+  }
+  .navBottomWrap{
+    height: 180px;
+  }
+  .logoWrap{
+    height: 90px;
+    width: 140px;
+  }
+  .siteLogo{
+    font-size: 28px;
+    margin-top: 20px;
+    padding: 8px 25px;
+  }
+  .primaryNavWrap{
+    height: 90px;
+  }
+  .navBottomTable{
+    padding-right: 50px;
+    padding-left: 50px;
+    height: 90px;
+  }
+  .navBottomLink{
+    height: 90px;
+  }
+  .primaryNavWrap .navLinkTitle{
+    padding: 26px 30px 18px 0px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+  .navWrap{
+    position: relative;
+    display: block;
+    width: 100%;
+  }
+  .navigation{
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 980px;
+    height: 108px;
+  }
+  
+  /* ------- Small Navigation - Top --------- */
+  #leftOffer{
+    font-size: 10px;
+    padding: 9px 50px 9px 10px;
+    margin-left: 0;
+  }
+  #leftOffer::before{
+    display: none;
+  }
+  .navTop{
+    height: 30px;
+    padding-right: 10px;
+    margin-right: 0;
+  }
+  .navTop::after{
+    display: none;
+  }
+  .navTop > .navTopLink{
+    font-size: 10px;
+    padding: 9px;
+  }
+  .siteLogo{
+    padding: 10px 34px;
+    margin-left: 10px;
+  }
+  .primaryNavWrap{
+    left: 50%;
+    width: 460px;
+  }
+  .navBottomTable{
+    width: 440px;
+  }
+  .navLinkTitle{
+    padding: 30px 40px 20px 30px;
+  }
+  .callUs{
+    margin-right: 10px;
+  }
+}
+
 
 /* ------ SubHeader ------- */
 .subHeaderWrap{
@@ -332,7 +420,7 @@ body{
 }
 
 /* \\\\ Sub Header Responsive Design //// */
-@media only screen and (max-width: 576px){
+@media only screen and (max-width: 768px){
   .subHeaderWrap{
     margin-top: 0;
     height: auto;
@@ -531,12 +619,13 @@ main{
 @media only screen and (max-width: 576px){
   #contentContainer{
     width: 100%;
+    height: auto;
   }
   #contentHeading , .sidebar{
     display: none;
   }
   .productsWrap{
-    float: none;
+    float: none !important;
   }
   .productsWrap .productsGrid{
     width: 100%;
@@ -587,5 +676,34 @@ main{
   }
   .gridBox:nth-last-child(-n+4){
     display: none;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  #contentContainer{
+    width: 100%;
+    height: auto;
+  }
+  #contentHeading , .sidebar{
+    display: none;
+  }
+  .productsWrap{
+    float: none !important;
+  }
+  .productsWrap .productsGrid{
+    width: 100%;
+    max-width: 680px;
+    margin: 20px auto;
+    border: 0;
+  }
+  .gridBox {
+    width: 33.33%;
+    height: 200px;
+    margin: auto;
+    text-align: left;
+    border: 0;
+  }
+  .gridBox .productImg{
+    width: 100%;
   }
 }
