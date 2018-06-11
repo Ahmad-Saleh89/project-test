@@ -399,6 +399,7 @@ body{
   border-top: 1px solid #ccc;
   height: 30px;
   margin-top: 5px;
+  overflow: hidden;
 }
 .subHeader{
   width: 980px;
@@ -629,13 +630,13 @@ main{
   }
   .productsWrap .productsGrid{
     width: 100%;
-    min-width: 310px;
+    min-width: 300px;
     max-width: 460px;
     margin: 20px auto;
     border: 0;
   }
   .gridBox {
-    width: 50%;
+    width: 48%;
     height: 200px;
     margin: auto;
     border: 0;
