@@ -11,4 +11,10 @@ window.onload = function(){
       navTopWrap.classList.remove('open');   
     }
   }
+
+  window.addEventListener('touchstart', function(ev) {
+    if(!ev.target.matches('#navbar-toggler')){
+      navTopWrap.classList.remove('open');   
+    }
+  });
 }
