@@ -179,7 +179,7 @@ body{
 }
 
 /* ---  Navigation Button Toggler - Hamburger ----- */
-.navbar-toggler {
+#navbar-toggler {
   display: none;
   position: relative;
   border: none;
@@ -192,7 +192,7 @@ body{
   cursor: pointer;
 }
 /* horizontal lines inside nav button: */
-.navbar-toggler span {
+#navbar-toggler span {
   display: block;
   position: relative;
   border-radius: 4px;
@@ -206,7 +206,7 @@ body{
 /* \\\\ Header Responsive Design //// */
 /* Small & Medium Screens */
 @media only screen and (max-width: 768px){
-  .navbar-toggler {
+  #navbar-toggler {
     display: block;
   }
   .navigation{
@@ -219,6 +219,10 @@ body{
     top: 70px;
     z-index: 10;
   }
+  .open{
+    display: block;
+  }
+  
   #leftOffer{
     display: none;
   }
@@ -313,7 +317,7 @@ body{
   .navigation{
     height: 180px;
   }
-  .navbar-toggler {
+  #navbar-toggler {
     margin: 30px;
   }
   .navTopWrap{
