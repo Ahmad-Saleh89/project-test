@@ -183,10 +183,10 @@ body{
   display: none;
   position: relative;
   border: none;
-  padding: 0;
+  padding: 20px;
   width: 30px;
   height: 25px;
-  margin: 20px;
+  margin: 0;
   float: left;
   background-color: #82001c;
   cursor: pointer;
