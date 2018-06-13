@@ -565,7 +565,7 @@ main{
   float: left;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  text-align: center;
+  text-align: start;
   cursor: pointer;
   overflow: hidden;
 }

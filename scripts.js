@@ -7,11 +7,11 @@ window.onload = function(){
     navTopWrap.classList.toggle("open");
   }
 
-  // Remove .open class when click out
+  /* Close Hamburger btn when Clicking occurs outside */
   window.onclick = close_btn;
   window.addEventListener('touchstart', close_btn);
-
   function close_btn(event){
+    // Remove .open class when click out
     if(!event.target.matches('#navbar-toggler')){
       navTopWrap.classList.remove('open');   
     }
@@ -19,32 +19,42 @@ window.onload = function(){
 
   // Tabs Sidebar & Tabs Panel
   var tabBtns = document.querySelectorAll(".optionList .optionItem");
-  var tabPanels = document.querySelectorAll(".productsWrap .productsGrid");
+  var panels = document.querySelectorAll(".productsWrap .productsGrid");
 
   // Sidebar Tabs functionality on Click
   for(var i=0; i<tabBtns.length; i++){
-    tabBtns[i].onclick = activeTab(i);
-    // tabBtns[i].addEventListener("keyup", showPanel(event));
+    tabBtns[i].addEventListener("click", activeTab(i));
+    tabBtns[i].addEventListener("keyup", showPanel);
   }
 
   // Display related panel accordingly
-  function activeTab(i){
+  /**
+   * PARAM integer the current index of the clicked element
+   * 
+   */
+  function activeTab(clickedTabIndex){
     return function(){
       // Default Status
+      // Loop through Tabs Buttons
       for(var x=0; x < tabBtns.length; x++){
+        // Delete .activeItem calss from all tab buttons 
         tabBtns[x].classList.remove("activeItem");
-        tabPanels[x].style.display = "none";
+        // Don't show any panel
+        panels[x].style.display = "none";
       }
-      // Active Status
-      tabBtns[i].classList.add("activeItem");
-      tabPanels[i].style.display = "table";
 
+      // Add .activeItem class to the clicked tab button
+      this.classList.add("activeItem");
+      // Display the corresponding Panel
+      panels[clickedTabIndex].style.display = "table";
     }
   }
 
-  // function showPanel(event){
-  //   if(event.keyCode === 13){
-  //     return activeTab(3);
-  //   }
-  // }
+  // Show Panel when 'Enter' is clicked
+  function showPanel(event){
+    if(event.keyCode === 13){
+      // Apply Click 
+      this.click();
+    }
+  }
 }
