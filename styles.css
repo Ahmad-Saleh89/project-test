@@ -529,9 +529,10 @@ main{
   opacity: 1;
   right: 0;
 }
-.optionList .activeItem{
+.optionList .activeItem a{
   font-size: 14px;
   font-weight: 600;
+  outline-style: none;
 }
 .optionList .activeItem > span{
   opacity: 1;

@@ -113,33 +113,33 @@
         <h2>FILTER PARTS</h2>
         <div class="optionWrapper">
           <a href="">Option With <br> Wrapping Line</a>
-          <ul class="optionList">
-            <li class="optionItem activeItem">
-              Active/Hover
+          <ul class="optionList" role="tablist">
+            <li id="tab1" class="optionItem activeItem" role="tab" tabindex="0">
+              <a href"#panel_1" aria-controls="panel_1">Active/Hover</a>
               <span class="hoverArrow"></span>
             </li>
-            <li class="optionItem">
-              Filter Option
+            <li id="tab2" class="optionItem" role="tab" tabindex="0">
+              <a hreft="#panel_2" aria-controls="panel_2">Filter Option</a>  
               <span class="hoverArrow"></span>
             </li>
-            <li class="optionItem">
-              Long Filter Option
+            <li id="tab3" class="optionItem" role="tab" tabindex="0">
+              <a hreft="#panel_3" aria-controls="panel_3">Long Filter Option</a>
               <span class="hoverArrow"></span>
             </li>
-            <li class="optionItem">
-              Filter Option
+            <li id="tab4" class="optionItem" role="tab" tabindex="0">
+              <a hreft="#panel_4" aria-controls="panel_4">Filter Option</a>
               <span class="hoverArrow"></span>
             </li>
-            <li class="optionItem">
-              Filter Option
+            <li id="tab5" class="optionItem" role="tab" tabindex="0">
+              <a hreft="#panel_5" aria-controls="panel_5">Filter Option</a>
               <span class="hoverArrow"></span>
             </li>
-            <li class="optionItem">
-              Filter Option
+            <li id="tab6" class="optionItem" role="tab" tabindex="0">
+              <a hreft="#panel_6" aria-controls="panel_6">Filter Option</a>
               <span class="hoverArrow"></span>
             </li>
-            <li class="optionItem">
-              Show All
+            <li id="tab7" class="optionItem" role="tab" tabindex="0">
+              <a hreft="#panel_7" aria-controls="panel_7">Show All</a>
               <span class="hoverArrow"></span>
             </li>
           </ul>
@@ -149,88 +149,88 @@
       <!-- Products Grid / Tabs Panels-->
       <div class="productsWrap">
 
-        <div class="productsGrid" style="display: table">
-          <div class="gridBox">
-            <div class="productImg">
+        <div id="panel_1" class="productsGrid" role="tabpanel" aria-labelledby="tab1" style="display: table">
+          <div class="gridBox" tabindex="0">
+            <div class="productImg" role="img">
               <span class="hoverButton">VIEW</span>
             </div>
             <p>Product Name</p>
           </div>
-          <div class="gridBox">
-            <div class="productImg">
+          <div class="gridBox" tabindex="0">
+            <div class="productImg" role="img">
               <span class="hoverButton">VIEW</span>
             </div>
             <p>Product Name</p>
           </div>
-          <div class="gridBox">
-            <div class="productImg">
+          <div class="gridBox" tabindex="0">
+            <div class="productImg" role="img">
               <span class="hoverButton">VIEW</span>
             </div>
             <p>Product Name</p>
           </div>
-          <div class="gridBox">
-            <div class="productImg">
+          <div class="gridBox" tabindex="0">
+            <div class="productImg" role="img">
               <span class="hoverButton">VIEW</span>
             </div>
             <p>Product Name</p>
           </div>
-          <div class="gridBox">
-            <div class="productImg">
+          <div class="gridBox" tabindex="0">
+            <div class="productImg" role="img">
               <span class="hoverButton">VIEW</span>
             </div>
             <p>Product Name</p>
           </div>
-          <div class="gridBox">
-            <div class="productImg">
+          <div class="gridBox" tabindex="0">
+            <div class="productImg" role="img">
               <span class="hoverButton">VIEW</span>
             </div>
             <p>Long Product Name With Wrapping Line</p>
           </div>
-          <div class="gridBox">
-            <div class="productImg">
+          <div class="gridBox" tabindex="0">
+            <div class="productImg" role="img">
               <span class="hoverButton">VIEW</span>
             </div>
             <p>Product Name</p>
           </div>
-          <div class="gridBox">
-            <div class="productImg">
+          <div class="gridBox" tabindex="0">
+            <div class="productImg" role="img">
               <span class="hoverButton">VIEW</span>
             </div>
             <p>Long Product Name With Wrapping Line</p>
           </div>
-          <div class="gridBox">
-            <div class="productImg">
+          <div class="gridBox" tabindex="0">
+            <div class="productImg" role="img">
               <span class="hoverButton">VIEW</span>
             </div>
             <p>Product Name</p>
           </div>
-          <div class="gridBox">
-            <div class="productImg">
+          <div class="gridBox" tabindex="0">
+            <div class="productImg" role="img">
               <span class="hoverButton">VIEW</span>
             </div>
             <p>Product Name</p>
           </div>
-          <div class="gridBox">
-            <div class="productImg">
+          <div class="gridBox" tabindex="0">
+            <div class="productImg" role="img">
               <span class="hoverButton">VIEW</span>
             </div>
             <p>Product Name</p>
           </div>
-          <div class="gridBox">
-            <div class="productImg">
+          <div class="gridBox" tabindex="0">
+            <div class="productImg" role="img">
               <span class="hoverButton">VIEW</span>
             </div>
             <p>Long Product Name With Wrapping Line</p>
           </div>
         </div>
 
-        <!-- Temporary Tabs Panel - To be added later -->
-        <div class="productsGrid placeholder" style="color: red">Tab 2: Some Content / Products</div>
-        <div class="productsGrid placeholder" style="color: green">Tab 3: Some Content / Products</div>
-        <div class="productsGrid placeholder" style="color: blue">Tab 4: Some Content / Products</div>
-        <div class="productsGrid placeholder" style="color: greenyellow">Tab 5: Some Content / Products</div>
-        <div class="productsGrid placeholder" style="color: maroon">Tab 6: Some Content / Products</div>
-        <div class="productsGrid placeholder" style="color: blueviolet">Tab 7: Show All</div>
+        <!-- Temporary Tabs Panel - Content to be added later -->
+        <div id="panel_2" class="productsGrid placeholder" role="tabpanel" aria-labelledby="tab2" style="color: red">Tab 2: Some Content / Products</div>
+        <div id="panel_3" class="productsGrid placeholder" role="tabpanel" aria-labelledby="tab3" style="color: green">Tab 3: Some Content / Products</div>
+        <div id="panel_4" class="productsGrid placeholder" role="tabpanel" aria-labelledby="tab4" style="color: blue">Tab 4: Some Content / Products</div>
+        <div id="panel_5" class="productsGrid placeholder" role="tabpanel" aria-labelledby="tab5" style="color: greenyellow">Tab 5: Some Content / Products</div>
+        <div id="panel_6" class="productsGrid placeholder" role="tabpanel" aria-labelledby="tab6" style="color: maroon">Tab 6: Some Content / Products</div>
+        <div id="panel_7" class="productsGrid placeholder" role="tabpanel" aria-labelledby="tab7" style="color: blueviolet">Tab 7: Show All</div>
 
       </div> <!-- /productsWrap -->
 

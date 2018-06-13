@@ -23,7 +23,8 @@ window.onload = function(){
 
   // Sidebar Tabs functionality on Click
   for(var i=0; i<tabBtns.length; i++){
-    tabBtns[i].addEventListener("click", activeTab(i));
+    tabBtns[i].onclick = activeTab(i);
+    // tabBtns[i].addEventListener("keyup", showPanel(event));
   }
 
   // Display related panel accordingly
@@ -37,8 +38,13 @@ window.onload = function(){
       // Active Status
       tabBtns[i].classList.add("activeItem");
       tabPanels[i].style.display = "table";
+
     }
   }
 
-
+  // function showPanel(event){
+  //   if(event.keyCode === 13){
+  //     return activeTab(3);
+  //   }
+  // }
 }
