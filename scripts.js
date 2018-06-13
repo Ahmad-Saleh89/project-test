@@ -16,4 +16,29 @@ window.onload = function(){
       navTopWrap.classList.remove('open');   
     }
   }
+
+  // Tabs Sidebar & Tabs Panel
+  var tabBtns = document.querySelectorAll(".optionList .optionItem");
+  var tabPanels = document.querySelectorAll(".productsWrap .productsGrid");
+
+  // Sidebar Tabs functionality on Click
+  for(var i=0; i<tabBtns.length; i++){
+    tabBtns[i].addEventListener("click", activeTab(i));
+  }
+
+  // Display related panel accordingly
+  function activeTab(i){
+    return function(){
+      // Default Status
+      for(var x=0; x < tabBtns.length; x++){
+        tabBtns[x].classList.remove("activeItem");
+        tabPanels[x].style.display = "none";
+      }
+      // Active Status
+      tabBtns[i].classList.add("activeItem");
+      tabPanels[i].style.display = "table";
+    }
+  }
+
+
 }
