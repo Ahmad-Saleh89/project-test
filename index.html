@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Imagemakers</title>
-  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 
 </head>
@@ -51,7 +51,7 @@
               </div>
     
               <div class="navBottomLink">
-                <div class="navLinkTitle" tabindex="1">
+                <div class="navLinkTitle" tabindex="0">
                     FIND BY <br> <span class="navSpanWide">PART TYPE</span>
                 </div>
                 <ul class="navLinkMenu" style="display: none">
@@ -62,7 +62,7 @@
               </div>
   
               <div class="navBottomLink">
-                <div class="navLinkTitle" tabindex="2">
+                <div class="navLinkTitle" tabindex="0">
                     <br> <span class="navSpanWide">SEARCH</span>
                 </div>
                 <ul class="navLinkMenu" style="display: none">
@@ -76,7 +76,7 @@
           </div> <!-- primaryNavWrap -->
 
           <div class="callUs">
-            <a href="tel:8005551212">GIVE US A CALL <br> <span class="navSpanWide">(800) 555-1212</span></a>
+            <a href="+1-800-555-1212">GIVE US A CALL <br> <span class="navSpanWide">(800) 555-1212</span></a>
           </div>
 
         </div> <!-- /navBottomWrap -->
@@ -112,22 +112,21 @@
       <div class="sidebar">
         <h2>FILTER PARTS</h2>
         <div class="optionWrapper">
-          <a href="">Option With <br> Wrapping Line</a>
           <ul class="optionList" role="tablist">
-            <li id="tab1" class="optionItem activeItem" role="tab" tabindex="0">
-              <a href"#panel_1" aria-controls="panel_1">Active/Hover</a>
+            <li id="tab1" class="optionItem" role="tab" tabindex="0">
+              <a href"#panel_1" aria-controls="panel_1">Option With <br> Wrapping Line</a>
               <span class="hoverArrow"></span>
             </li>
-            <li id="tab2" class="optionItem" role="tab" tabindex="0">
-              <a hreft="#panel_2" aria-controls="panel_2">Filter Option</a>  
+            <li id="tab2" class="optionItem activeItem" role="tab" tabindex="0">
+              <a href"#panel_2" aria-controls="panel_2">Active/ Hover</a>
               <span class="hoverArrow"></span>
             </li>
             <li id="tab3" class="optionItem" role="tab" tabindex="0">
-              <a hreft="#panel_3" aria-controls="panel_3">Long Filter Option</a>
+              <a hreft="#panel_3" aria-controls="panel_3">Filter Option</a>
               <span class="hoverArrow"></span>
             </li>
             <li id="tab4" class="optionItem" role="tab" tabindex="0">
-              <a hreft="#panel_4" aria-controls="panel_4">Filter Option</a>
+              <a hreft="#panel_4" aria-controls="panel_4">Long Filter Option</a>
               <span class="hoverArrow"></span>
             </li>
             <li id="tab5" class="optionItem" role="tab" tabindex="0">
@@ -139,7 +138,11 @@
               <span class="hoverArrow"></span>
             </li>
             <li id="tab7" class="optionItem" role="tab" tabindex="0">
-              <a hreft="#panel_7" aria-controls="panel_7">Show All</a>
+              <a hreft="#panel_7" aria-controls="panel_7">Filter Option</a>  
+              <span class="hoverArrow"></span>
+            </li>
+            <li id="tab8" class="optionItem" role="tab" tabindex="0">
+              <a hreft="#panel_8" aria-controls="panel_8">Show All</a>
               <span class="hoverArrow"></span>
             </li>
           </ul>
@@ -148,8 +151,9 @@
 
       <!-- Products Grid / Tabs Panels-->
       <div class="productsWrap">
+        <div id="panel_1" class="productsGrid placeholder" role="tabpanel" aria-labelledby="tab1" style="color:olivedrab">Tab 1: Some Content / Products</div>
 
-        <div id="panel_1" class="productsGrid" role="tabpanel" aria-labelledby="tab1" style="display: table">
+        <div id="panel_2" class="productsGrid" role="tabpanel" aria-labelledby="tab2" style="display: table">
           <div class="gridBox" tabindex="0">
             <div class="productImg" role="img">
               <span class="hoverButton">VIEW</span>
@@ -225,19 +229,19 @@
         </div>
 
         <!-- Temporary Tabs Panel - Content to be added later -->
-        <div id="panel_2" class="productsGrid placeholder" role="tabpanel" aria-labelledby="tab2" style="color: red">Tab 2: Some Content / Products</div>
         <div id="panel_3" class="productsGrid placeholder" role="tabpanel" aria-labelledby="tab3" style="color: green">Tab 3: Some Content / Products</div>
         <div id="panel_4" class="productsGrid placeholder" role="tabpanel" aria-labelledby="tab4" style="color: blue">Tab 4: Some Content / Products</div>
         <div id="panel_5" class="productsGrid placeholder" role="tabpanel" aria-labelledby="tab5" style="color: greenyellow">Tab 5: Some Content / Products</div>
         <div id="panel_6" class="productsGrid placeholder" role="tabpanel" aria-labelledby="tab6" style="color: maroon">Tab 6: Some Content / Products</div>
-        <div id="panel_7" class="productsGrid placeholder" role="tabpanel" aria-labelledby="tab7" style="color: blueviolet">Tab 7: Show All</div>
+        <div id="panel_7" class="productsGrid placeholder" role="tabpanel" aria-labelledby="tab7" style="color: blueviolet">Tab 7: Some Content / Products</div>
+        <div id="panel_8" class="productsGrid placeholder" role="tabpanel" aria-labelledby="tab2" style="color: red">Tab 8: Show All</div>
 
       </div> <!-- /productsWrap -->
 
     </section>
 
   </main>
-  <script src="scripts.js"></script>
+  <!-- <script src="scripts.js"></script> -->
 
 </body>
 </html>
