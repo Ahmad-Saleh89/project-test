@@ -1,10 +1,11 @@
 body{
   margin: 0;
   padding: 0;
+  font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
-  background-image: url(images/desktop.png);
-  background-position: cover;
+  background-image: url(mobile_imgs/mobile.png);
   background-repeat: no-repeat;
+  background-size: 320px;
 }
 
 /* ********  Header  ********* */
@@ -119,6 +120,9 @@ body{
   margin-top: 13px;
   height: 52px;
 }
+#mobile-logo{
+  display: none;
+}
 .primaryNavWrap{
   display: inline-block;
   width: 690px;
@@ -185,10 +189,10 @@ body{
   display: none;
   position: relative;
   border: none;
-  padding: 5px;
-  width: 30px;
-  height: 25px;
-  margin: 15px;
+  padding: 17px 15px;
+  width: 16px;
+  height: 10px;
+  margin: 0;
   float: left;
   background-color: #82001c;
   cursor: pointer;
@@ -198,10 +202,10 @@ body{
   display: block;
   position: relative;
   border-radius: 4px;
-  width: 30px;
+  width: 17px;
   height: 1px;
-  background-color: #ff8fa7;
-  margin: 6px 0;
+  background-color: #fff;
+  margin: 3px 0;
   padding: 0;
 }
 
@@ -212,13 +216,13 @@ body{
     display: block;
   }
   .navigation{
-    height: 140px;
+    height: 100px;
   }
   .navTopWrap{
     display: none;
     position: absolute;
     width: 100%;
-    top: 70px;
+    top: 48px;
     z-index: 10;
   }
   .open{
@@ -235,6 +239,8 @@ body{
     background-color: #b20127;
     padding: 5px 0;
     border: 1px solid #ff8fa7;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
   }
   .navTop > .navTopLink{
     display: block;
@@ -251,27 +257,35 @@ body{
   }
   .navBottomWrap{
     width: 100%;
-    height: 140px;
+    height: 100px;
     background-color: #82001c;
   }
   .logoWrap{
-    height: 70px;
+    height: 48px;
     margin: 0 auto;
-    width: 120px;
+    width: 90px;
     text-align: center;
   }
   .siteLogo{
-    background-color: #fff;
-    color: #82001c;
-    font-size: 24px;
+    background-color: #82001c;
     float: none;
-    margin-top: 15px;
-    padding: 5px 20px;
+    margin-top: 10px;
+    height: 30px;
     display: inline-block;
+  }
+  #desktop-logo{
+    display: none;
+  }
+  #mobile-logo{
+    display: block;
+  }
+  .siteLogo > img{
+    width: 90px;
+    height: 30px;
   }
   .primaryNavWrap{
     display: block;
-    height: 70px;
+    height: 52px;
     background-color: #b20127;
     width: 100%;
     border-top: 1px solid #f8879f;
@@ -280,14 +294,14 @@ body{
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
-    height: 70px;
+    height: 52px;
     margin: 0 auto;
     text-align: center;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
   }
   .navBottomLink{
-    height: 70px;
+    height: 52px;
   }
   .navBottomLink:nth-child(1){
     float: left;
@@ -296,18 +310,22 @@ body{
     float: right;
   }
   .primaryNavWrap .navLinkTitle{
-    padding: 18px 30px 18px 0px;
+    padding: 10px 20px 10px 0px;
     text-align: start;
     color: #ffffff;
-    font-size: 10px;
-    height: 70px;
+    font-size: 9px;
+    height: 52px;
+    line-height: 14px;
   }
   .navBottomWrap .navSpanWide{
     font-size: 14px;
     font-weight: 400;
   }
   .primaryNavWrap .navLinkTitle > span::after{
-    border-top: 14px solid #ffffff;
+    border-top: 10px solid #ffffff;
+    border-right: 5px solid transparent;
+    margin-left: 9px;
+
   }
   .callUs{
     display: none;
@@ -492,6 +510,7 @@ main{
   margin-top: -4px;
   list-style: none;
   font-size: 15px;
+  font-size-adjust:0.5;
 }
 .sidebar .optionList > .optionItem{
   position: relative;
@@ -513,7 +532,8 @@ main{
   background-repeat: no-repeat;
   width: 12px;
   height: 15px;
-  margin-top: 3px;
+  top: 50%;
+  margin-top: -6px;
   right: 5px;
   opacity: 0;
   -webkit-transition: all 200ms ease-in-out;
@@ -542,9 +562,11 @@ main{
 .productsGrid{
   display: none;
   /* display: table; */
-  width: 780px;
+  width: 784px;
+  height: 568px;
   border: 1px solid #dcdbdb;
   min-height: 500px;
+  margin-right: 1px;
 }
 .placeholder{
   text-align: center;
@@ -554,7 +576,7 @@ main{
 .gridBox{
   position: relative;
   display: table-cell;
-  width: 195px;
+  width: 25%;
   height: 190px;
   border: 1px solid #dcdbdb;
   float: left;
@@ -566,67 +588,52 @@ main{
 }
 .productImg{
   position: relative;
-  width: 170px;
+  width: 100%;
   height: 150px;
-  margin: 0 auto;
-  background-position: bottom center;
-  background-size: contain;
-  background-repeat: no-repeat;
+  text-align: center;
+}
+.productImg > img{
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 /* Products Images */
-.gridBox:nth-child(1) .productImg{
-  background-image: url(images/hand-watch.png);
+.gridBox:nth-child(2) .productImg > img{
+  margin-top: 15px;
 }
-.gridBox:nth-child(2) .productImg{
-  background-image: url(images/sneakers.png);
+.gridBox:nth-child(4) .productImg > img{
+  margin-top: 15px;
 }
-.gridBox:nth-child(3) .productImg{
-  background-image: url(images/shampoo.png);
+.gridBox:nth-child(5) .productImg > img{
+  margin-top: 12px;
 }
-.gridBox:nth-child(4) .productImg{
-  background-image: url(images/intel-reader.png);
-  width: 160px;
+.gridBox:nth-child(7) .productImg > img{
+  margin-top: 4px;
+  padding-right: 10px;
 }
-.gridBox:nth-child(5) .productImg{
-  background-image: url(images/screw.png);
+.gridBox:nth-child(9) .productImg > img{
+  margin-top: 7px;
 }
-.gridBox:nth-child(6) .productImg{
-  background-image: url(images/kitchen.png);
-}
-.gridBox:nth-child(7) .productImg{
-  background-image: url(images/necklace.png);
-}
-.gridBox:nth-child(8) .productImg{
-  background-image: url(images/baby-stroller.png);
-}
-.gridBox:nth-child(9) .productImg{
-  background-image: url(images/pig-toy.png);
-}
-.gridBox:nth-child(10) .productImg{
-  background-image: url(images/iphones.png);
-}
-.gridBox:nth-child(11) .productImg{
-  background-image: url(images/headphone.png);
-}
-.gridBox:nth-child(12) .productImg{
-  background-image: url(images/tea-pot.png);
+.gridBox:nth-child(11) .productImg > img{
+  margin-top: 7px;
 }
 
 /* Product Caption */
 .gridBox p{
   position: absolute;
-  bottom: 0;
-  padding-right: 20px;
-  padding-left: 20px;
+  bottom: 2px;
+  padding-right: 25px;
+  padding-left: 18px;
   font-size: 13px;
   font-weight: 600;
   color: #464646;
-  line-height: 18px;
 }
 /* Product VIEW button when hover */
 .gridBox > .productImg > .hoverButton{
   position: absolute;
-  padding: 8px 40px;
+  padding: 6px 40px;
   font-family: 'Oswald', sans-serif;
   font-size: 18px;
   font-weight: 600;
@@ -642,7 +649,7 @@ main{
   transition: all 300ms ease-in-out;
 }
 .gridBox:hover .hoverButton{
-  bottom: 30px;
+  bottom: 32px;
   opacity: 1;
 }
 
