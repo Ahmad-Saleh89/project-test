@@ -3,7 +3,6 @@ body{
   padding: 0;
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
-  /* background-image: url(images/desktop.png); */
 }
 
 /* ********  Header  ********* */
@@ -293,8 +292,9 @@ body{
   }
   .navBottomTable{
     width: 100%;
+    max-width: 460px;
     padding-right: 20px;
-    padding-left: 15px;
+    padding-left: 5px;
     height: 52px;
     margin: 0 auto;
     text-align: center;
@@ -311,7 +311,7 @@ body{
     float: right;
   }
   .primaryNavWrap .navLinkTitle{
-    padding: 10px 20px 10px 0px;
+    padding: 10px 20px 10px 10px;
     text-align: start;
     color: #ffffff;
     font-size: 9px;
@@ -336,39 +336,53 @@ body{
 /* Medium Screens Only */
 @media only screen and (min-width: 577px) and (max-width: 768px) {
   .navigation{
-    height: 180px;
+    height: 140px;
   }
   #navbar-toggler {
-    margin: 30px;
+    padding: 25px;
+  }
+  #navbar-toggler span{
+    width: 20px;
+    margin: 4px 0;
   }
   .navTopWrap{
-    top: 90px;
+    top: 65px;
   }
   .navBottomWrap{
-    height: 180px;
+    height: 140px;
   }
   .logoWrap{
-    height: 90px;
+    height: 65px;
     width: 140px;
   }
   .siteLogo{
-    font-size: 28px;
-    margin-top: 20px;
-    padding: 8px 25px;
+    margin-top: 18px;
+    padding:0;
+    height: 35px;
+  }
+  .siteLogo > img {
+    width: 100px;
+    height: 35px;
   }
   .primaryNavWrap{
-    height: 90px;
+    height: 75px;
   }
   .navBottomTable{
     padding-right: 50px;
-    padding-left: 50px;
-    height: 90px;
+    padding-left: 40px;
+    height: 75px;
+    max-width: 570px;
   }
   .navBottomLink{
-    height: 90px;
+    height: 75px;
   }
   .primaryNavWrap .navLinkTitle{
-    padding: 26px 30px 18px 0px;
+    padding: 26px 30px 18px 10px;
+    height: 75px;
+    font-size: 10px;
+  }
+  .primaryNavWrap .navLinkTitle .navSpanWide{
+    font-size: 16px;
   }
 }
 
@@ -382,7 +396,7 @@ body{
   .navigation{
     position: relative;
     display: block;
-    width: 100%;
+    width: 725px;
     margin: 0 auto;
     max-width: 980px;
     height: 108px;
@@ -390,39 +404,37 @@ body{
   
   #leftOffer{
     font-size: 10px;
-    padding: 9px 50px 9px 10px;
-    margin-left: 0;
-  }
-  #leftOffer::before{
-    display: none;
+    padding: 9px 35px 9px 80px;
+    margin-left: -65px;
   }
   .navTop{
     height: 30px;
-    padding-right: 10px;
-    margin-right: 0;
-  }
-  .navTop::after{
-    display: none;
+    padding-right: 75px;
+    margin-right: -75px;
   }
   .navTop > .navTopLink{
     font-size: 10px;
-    padding: 9px;
+    padding: 9px 7px;
+  }
+  .navBottomWrap{
+    width: 725px;
+    margin: auto;
   }
   .siteLogo{
-    padding: 10px 34px;
-    margin-left: 10px;
+    margin: 13px 10px 0;
   }
   .primaryNavWrap{
     left: 50%;
-    width: 450px;
+    width: 400px;
   }
   .navBottomTable{
-    width: 440px;
+    width: 395px;
   }
   .navLinkTitle{
-    padding: 30px 40px 20px 30px;
+    padding: 30px 25px 20px;
   }
   .callUs{
+    margin-top: 30px;
     margin-right: 10px;
   }
 }
@@ -464,12 +476,19 @@ body{
     padding-bottom: 3px;
   }
   .subHeader{
-    width: 90%;
-    padding: 0 15px;
-    margin: 3px 0;
+    width: 100%;
+    max-width: 725px;
+    padding: 0 10px;
+    margin: 3px auto;
+    box-sizing: border-box;
   }
   .subHeader > li > a {
     font-size: 9px;
+  }
+}
+@media only screen and (max-width: 768px){
+  .subHeader{
+    padding-left: 15px;
   }
 }
 
@@ -692,8 +711,9 @@ main{
     margin-top: 0;
     font-size: 14px;
     padding-left: 15px;
-    padding-right: 5px;
+    padding-right: 8px;
     line-height: 17px;
+    font-family: 'Oswald', sans-serif;
   }
   .gridBox .productImg{
     width: 90%;
@@ -751,12 +771,21 @@ main{
   .gridBox .productImg{
     width: 100%;
   }
+  .gridBox p{
+    position: relative;
+    margin-top: 0;
+    font-size: 14px;
+    padding-left: 15px;
+    padding-right: 15px;
+    line-height: 17px;
+    font-family: 'Oswald', sans-serif;
+  }
 }
 
 
 @media only screen and (min-width: 769px) and (max-width: 991px) {
   #contentContainer{
-    width: 100%;
+    width: 725px;
     height: 900px;
     margin: 0 auto;
   }
@@ -773,17 +802,17 @@ main{
   }
   /* --- Products Grid --- */
   .productsWrap{
-    width: 70%;
+    width: 542px;
   }
   .productsGrid{
     width: 100%;
-    padding-right: 10px;
-    border: 0;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
   }
   .gridBox{
-    width: 33.33%;
-    border: 0;
+    width: 180px;
+  }
+  .gridBox p{
+    padding-right: 10px;
   }
 }
