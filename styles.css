@@ -3,6 +3,8 @@ body{
   padding: 0;
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
+  /* background-image: url(mobile_imgs/mobile.png);
+  background-size: 320px; */
 }
 
 /* ********  Header  ********* */
@@ -213,6 +215,7 @@ body{
   }
   .navigation{
     height: 100px;
+    background-color: #82001c;
   }
   .navTopWrap{
     display: none;
@@ -291,7 +294,7 @@ body{
   }
   .navBottomTable{
     width: 100%;
-    max-width: 460px;
+    max-width: 400px;
     padding-right: 20px;
     padding-left: 5px;
     height: 52px;
@@ -693,13 +696,13 @@ main{
   }
   .productsWrap .productsGrid{
     width: 100%;
-    min-width: 300px;
-    max-width: 460px;
+    max-width: 400px;
     margin: 0px auto;
     border: 0;
   }
   .gridBox {
     width: 48%;
+    max-width: 200px;
     height: 204px;
     margin: auto;
     border: 0;
@@ -723,7 +726,7 @@ main{
   .gridBox .productImg img {
     height: auto;
     width: auto;
-    max-width: 100%;
+    max-width: 129px;
     max-height: 150px;
     margin-top: 0 !important;
   }
