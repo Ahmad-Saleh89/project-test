@@ -163,10 +163,11 @@ body{
   position: absolute;
   border: solid transparent;
   margin-left: 12px;
+  bottom: 2px;
   border-left: 6px solid transparent;
 	border-right: 7px solid transparent;
   border-top: 14px solid #82001c;
-  margin-bottom: -14px;
+  margin-bottom: 0px;
 }
 /* Call to Action - Phone Number */
 .callUs{
@@ -701,7 +702,7 @@ main{
     border: 0;
   }
   .gridBox {
-    width: 48%;
+    width: 50%;
     max-width: 200px;
     height: 204px;
     margin: auto;
@@ -726,8 +727,8 @@ main{
   .gridBox .productImg img {
     height: auto;
     width: auto;
-    max-width: 129px;
-    max-height: 150px;
+    max-width: 140px;
+    max-height: 130px;
     margin-top: 0 !important;
   }
   .desktop-img{
