@@ -3,8 +3,27 @@ body{
   padding: 0;
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
-  /* background-image: url(mobile_imgs/mobile.png);
-  background-size: 320px; */
+}
+
+#skipNav{
+  position: absolute;
+  top: -3em;
+  margin: 0;
+  padding: 5px;
+  font-size: 12px;
+  text-decoration: none;    
+  color: #464646;
+  -webkit-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  opacity: 0;
+}
+#skipNav:focus{
+  top: 0;
+  color: #fff;
+  background-color: #82001c;
+  z-index: 10;
+  opacity: 1;
 }
 
 /* ********  Header  ********* */
@@ -818,4 +837,30 @@ main{
   .gridBox p{
     padding-right: 10px;
   }
+}
+
+footer{
+  position: relative;
+  height: 50px;
+  width: 100%;
+  overflow: hidden;
+}
+#returntoTop{
+  position: absolute;
+  padding: 5px;
+  background-color: #82001c;
+  text-decoration: none;
+  color: #fff;
+  -webkit-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  left: 50%;
+  margin-left: -45px;
+  font-size: 12px;
+  bottom: -2em;
+  opacity: 0;
+}
+#returntoTop:focus{
+  bottom: 0;
+  opacity: 1;
 }
