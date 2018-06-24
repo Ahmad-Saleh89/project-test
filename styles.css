@@ -344,6 +344,13 @@ body{
     font-size: 14px;
     font-weight: 400;
   }
+  #search::after{
+    border: 0;
+    height: 15px;
+    width: 15px;
+    background-image: url(mobile_imgs/search.png);
+    background-size: cover;
+  }
   .primaryNavWrap .navLinkTitle > span::after{
     border-top: 10px solid #ffffff;
     border-right: 5px solid transparent;
