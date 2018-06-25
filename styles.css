@@ -3,6 +3,7 @@ body{
   padding: 0;
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
 }
 
 #skipNav{
@@ -416,7 +417,7 @@ body{
 }
 
 /* Larger Screens */
-@media only screen and (min-width: 769px) and (max-width: 991px) {
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
   .navWrap{
     position: relative;
     display: block;
@@ -498,7 +499,7 @@ body{
 }
 
 /* \\\\ Sub Header Responsive Design //// */
-@media only screen and (max-width: 991px){
+@media only screen and (max-width: 1024px){
   .subHeaderWrap{
     margin-top: 0;
     height: auto;
@@ -812,7 +813,7 @@ main{
 }
 
 
-@media only screen and (min-width: 769px) and (max-width: 991px) {
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
   #contentContainer{
     width: 725px;
     height: 900px;
